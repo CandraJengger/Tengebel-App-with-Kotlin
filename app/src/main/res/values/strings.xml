@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tengebel</string>
+    <string name="hello_dimas">Hello Dimas</string>
+    <string name="slogan">Find Peace and Don\'t be quiet</string>
+    <string name="alamat">Alamat</string>
+    <string name="info">Info</string>
+    <string name="no_hp">Nomor HP</string>
+    <string name="email">Email</string>
+    <string name="kembali">Kembali</string>
+    <string name="jenis_kelamin">Jenis Kelamin</string>
+    <string name="name_key">Dimas Aldi Candra S.</string>
+    <string name="status">Pelajar / Mahasiswa</string>
+    <string name="tengebel">Tengebel</string>
+    <string name="telp">+62-8213-9149-1433</string>
+    <string name="email_saya">dimasacs89@gmail.com</string>
+    <string name="tandai">Tandai Sebagai Tujuan</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="70dp" >
+
+        <ImageView
+            android:id="@+id/ic_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            tools:text="Nama Wisata"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/century_gothic"/>
+
+        <ImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:maxWidth="400dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/klentheng"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/tv_item_name"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_item_photo">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location"
+                android:layout_marginRight="10dp"
+                android:translationY="-2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="20sp"
+                    android:text="@string/alamat"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/century_gothic"/>
+
+                <TextView
+                    android:id="@+id/tv_item_adress"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorValueText"
+                    android:textSize="20sp"
+                    tools:text="Alamat wisata"
+                    android:fontFamily="@font/century_gothic"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/ll_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_below="@id/ll_item_address"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_info"
+                android:layout_marginRight="10dp"
+                android:translationY="-2dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTitleText"
+                    android:textSize="20sp"
+                    android:text="@string/info"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/century_gothic"/>
+
+                <TextView
+                    android:id="@+id/tv_item_info"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorValueText"
+                    android:textSize="20sp"
+                    tools:text="lorem ipsum dolor"
+                    android:fontFamily="@font/century_gothic"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:background="@drawable/radius"
+            android:text="@string/tandai"
+            android:paddingLeft="36dp"
+            android:paddingRight="36dp"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ll_item_info"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
